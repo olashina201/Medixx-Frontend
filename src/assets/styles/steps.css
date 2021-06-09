@@ -1,0 +1,106 @@
+.solution-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+  padding: 20px;
+}
+
+.head{
+  text-align: center;
+}
+.solution-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.solution-card{
+  width: 280px;
+  height: fit-content;
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.solution-card img{
+  width: 50px;
+}
+
+@media (max-width: 767px) {
+  .solution-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .solution-card{
+    width: 100%;
+  }
+}
+
+.question-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.left{
+  width: 400px;
+  height: fit-content;
+  padding: 20px;
+}
+.left p{
+  padding: 20px;
+}
+.right img{
+  width: 370px;
+  border-radius: 30px 0px 30px 0px;
+  -webkit-border-radius: 30px 0px 30px 0px;
+  -moz-border-radius: 30px 0px 30px 0px;
+  -ms-border-radius: 30px 0px 30px 0px;
+  -o-border-radius: 30px 0px 30px 0px;
+}
+
+.question-section2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.left-side img{
+  width: 370px;
+  border-radius: 30px 0px 30px 0px;
+  -webkit-border-radius: 30px 0px 30px 0px;
+  -moz-border-radius: 30px 0px 30px 0px;
+  -ms-border-radius: 30px 0px 30px 0px;
+  -o-border-radius: 30px 0px 30px 0px;
+}
+.right-side{
+  width: 400px;
+  height: fit-content;
+}
+
+@media (max-width: 767px) {
+  .question-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .question-section2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

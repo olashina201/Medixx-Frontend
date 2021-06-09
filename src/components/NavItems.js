@@ -1,20 +1,25 @@
-import React from 'react'
+const NavData = [
+  {
+    title: "Home",
+    path: "/",
+    className: "active"
+  },
+  {
+    title: "About Us",
+    path: "/about"
+  },
+  {
+    title: "Contact Us",
+    path: "/contact"
+  },
+  {
+    title: "Contact Us",
+    path: "/contact"
+  },
+  {
+    title: "Contact Us",
+    path: "/contact"
+  }
+];
 
-export const NavData = [
-    {
-        title: 'Home',
-        path:'/',
-        className: 'menu-item'
-    },
-    {
-        title: 'About Us',
-        path: '/about',
-        className: 'menu-item'
-    },
-    {
-        title: 'Contact Us',
-        path: '/contact',
-        className: 'menu-item'
-    }
-
-]
+export default NavData;
