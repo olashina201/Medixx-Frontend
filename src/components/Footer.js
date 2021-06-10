@@ -8,7 +8,7 @@ function Footer() {
       <div className="row">
         <div className="col-sm-12 col-md-6">
           <h6>About</h6>
-          <p className="text-justify">MEDIXX.COM <i>CODE WANTS TO BE SIMPLE </i> is hjjfjz hfvbhjzsjhjfbhzd jhzsdbfkjadsbhkjfhna sdznhbfvbsdzgfvbs bzedfhvbadhfb szdhbfvzhsdb kjbhzewjkfzwe hjvehjvf\zb</p>
+          <p className="text-justify">MEDIXX.COM is hjjfjz hfvbhjzsjhjfbhzd jhzsdbfkjadsbhkjfhna sdznhbfvbsdzgfvbs bzedfhvbadhfb szdhbfvzhsdb kjbhzewjkfzwe hjvehjvf\zb</p>
         </div>
 
         <div className="col-xs-6 col-md-3">

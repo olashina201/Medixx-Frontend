@@ -13,22 +13,22 @@ function Steps() {
         <div className="solution-card">
           <img src={image} />
           <h6>Check doctors profile</h6>
-          <p>check doctors profile accross the worldhbdhfve fveheafdhagufyga sdyufg</p>
+          <p>check doctors profile accross the worldhbdhfve fveheafdhagufyga</p>
         </div>
         <div className="solution-card">
           <img src={image} />
           <h6>Request consultation</h6>
-          <p>check doctors profile accross the worldhbdhfve fveheafdhagufyga sdyufg</p>
+          <p>check doctors profile accross the worldhbdhfve fveheafdhagufyga</p>
         </div>
         <div className="solution-card">
           <img src={image} />
           <h6>Receive your consultation</h6>
-          <p>check doctors profile accross the worldhbdhfve fveheafdhagufyga sdyufg</p>
+          <p>check doctors profile accross the worldhbdhfve fveheafdhagufyga</p>
         </div>
         <div className="solution-card">
           <img src={image} />
           <h6>Get your solution</h6>
-          <p>check doctors profile accross the worldhbdhfve fveheafdhagufyga sdyufg</p>
+          <p>check doctors profile accross the worldhbdhfve fveheafdhagufyga</p>
         </div>
       </div>
     </div>

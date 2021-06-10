@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Steps from "./components/Steps";
 import Hero2 from "./components/Hero2";
 import Hero3 from "./components/Hero3";
+import Appointment from "./components/Appointment";
+import Doctor from "./components/Doctor";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Steps />
       <Hero2 />
       <Hero3 />
+      <Doctor />
+      <Appointment />
       <Footer />
     </>
   );

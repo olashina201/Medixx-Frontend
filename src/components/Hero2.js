@@ -8,9 +8,10 @@ function Hero2() {
         <div className="left">
           <h6>POST A QUESTION</h6>
           <h4>Post Your Questions Our Experts are ready to answer</h4>
-          <p>dvsghjsezbjdfvb fsdmhvgsdzkufhmgvzhsd jmbhjkszhghxfd rhsbzgfzkjshgk zrbsfzjsrhgkbzsjk
-            hfkjgvhfzkskhskjhgkhehgfksdhngkhsdbgbxfbjgbxzghksdhnkgjbzsdbgkjvdskzgvbkdzsvkzs
-            hjgjhsregijirjgoijsirehg rzjsbgkjrskhghawrhkghkshnrkgkshndkghk\hnjvhjsdzjvbijsznh
+          <p>dvsghjsezbjdfvb loebfjb bfJNBFD DFBJBJJFD hbdfadjfc hdbfhjbdacjf
+            bfvkjnsnfvjnsdklvjdsblklsdjb hjbdjkakndf kbjcfbhab dhcb  sdvbhjbahf
+            hbvhjbjkfzkgsbk hjbzhdsfvhab jbfvhjzbsbvj jhbfjbhjvb hsfbjkhbadjf
+            jsjkfh
           </p>
         </div>
         <div className="right">
