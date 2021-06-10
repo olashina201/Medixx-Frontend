@@ -1,13 +1,17 @@
 import React from "react";
 import "../assets/styles/doctor.css";
 import "../assets/bootstrap/css/bootstrap.min.css";
+import facebook from "../assets/images/icon-facebook.svg";
+import instagram from "../assets/images/icon-instagram.svg";
+import twitter from "../assets/images/icon-twitter.svg";
+import pinterest from "../assets/images/icon-pinterest.svg";
 
 function Doctor() {
   return (
     <div className="container">
       <div className="row">
         <div className="col-12 align-middle">
-          <h2>Meet Our Doctors</h2>
+          <h2 style={{ textAlign: "center" }}>Meet Our Doctors</h2>
         </div>
       </div>
       <div className="row">
@@ -21,10 +25,10 @@ function Doctor() {
               <h4 className="title">Web Developer</h4>
             </div>
             <ul className="social">
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-facebook" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-twitter" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-google-plus" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-linkedin" aria-hidden="true"></a></li>
+              <li><a href="#" aria-hidden="true"><img src={facebook} /></a></li>
+              <li><a href="#" aria-hidden="true"><img src={twitter} /></a></li>
+              <li><a href="#" aria-hidden="true"><img src={instagram} /></a></li>
+              <li><a href="#" aria-hidden="true"><img src={pinterest} /></a></li>
             </ul>
           </div>
         </div>
@@ -38,10 +42,10 @@ function Doctor() {
               <h4 className="title">Web Developer</h4>
             </div>
             <ul className="social">
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-facebook" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-twitter" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-google-plus" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-linkedin" aria-hidden="true"></a></li>
+              <li><a href="#" aria-hidden="true"><img src={facebook} /></a></li>
+              <li><a href="#" aria-hidden="true"><img src={twitter} /></a></li>
+              <li><a href="#" aria-hidden="true"></a><img src={instagram} /></li>
+              <li><a href="#" aria-hidden="true"></a><img src={pinterest} /></li>
             </ul>
           </div>
         </div>
@@ -55,10 +59,10 @@ function Doctor() {
               <h4 className="title">Web Developer</h4>
             </div>
             <ul className="social">
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-facebook" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-twitter" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-google-plus" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-linkedin" aria-hidden="true"></a></li>
+              <li><a href="#" aria-hidden="true"><img src={facebook} /></a></li>
+              <li><a href="#" aria-hidden="true"><img src={twitter} /></a></li>
+              <li><a href="#" aria-hidden="true"></a><img src={instagram} /></li>
+              <li><a href="#" aria-hidden="true"></a><img src={pinterest} /></li>
             </ul>
           </div>
         </div>
@@ -72,10 +76,10 @@ function Doctor() {
               <h4 className="title">Mobile Developer</h4>
             </div>
             <ul className="social">
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-facebook" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-twitter" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-google-plus" aria-hidden="true"></a></li>
-              <li><a href="https://codepen.io/collection/XdWJOQ/" className="fa fa-linkedin" aria-hidden="true"></a></li>
+              <li><a href="#" aria-hidden="true"><img src={facebook} /></a></li>
+              <li><a href="#" aria-hidden="true"><img src={twitter} /></a></li>
+              <li><a href="#" aria-hidden="true"><img src={instagram} /></a></li>
+              <li><a href="#" aria-hidden="true"><img src={pinterest} /></a></li>
             </ul>
           </div>
         </div>

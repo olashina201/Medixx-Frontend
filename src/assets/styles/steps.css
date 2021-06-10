@@ -16,13 +16,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-left: 50px;
 }
 
 .solution-card{
   width: 280px;
   height: fit-content;
   background: #fff;
-  margin: 10px;
+  margin: 0 auto;
 }
 .solution-card img{
   width: 50px;
@@ -37,6 +38,9 @@
   .solution-card{
     width: 100%;
   }
+  .left{
+    
+  }
 }
 
 .question-section{
@@ -47,9 +51,9 @@
   margin-bottom: 40px;
 }
 .left{
-  width: 500px;
+  width: 400px;
   height: fit-content;
-  padding: 20px;
+  text-align: center;
 }
 
 .right img{
@@ -80,6 +84,7 @@
 .right-side{
   width: 400px;
   height: fit-content;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
