@@ -44,8 +44,8 @@ function Doctor() {
             <ul className="social">
               <li><a href="#" aria-hidden="true"><img src={facebook} /></a></li>
               <li><a href="#" aria-hidden="true"><img src={twitter} /></a></li>
-              <li><a href="#" aria-hidden="true"></a><img src={instagram} /></li>
-              <li><a href="#" aria-hidden="true"></a><img src={pinterest} /></li>
+              <li><a href="#" aria-hidden="true"><img src={instagram} /></a></li>
+              <li><a href="#" aria-hidden="true"><img src={pinterest} /></a></li>
             </ul>
           </div>
         </div>
@@ -61,8 +61,8 @@ function Doctor() {
             <ul className="social">
               <li><a href="#" aria-hidden="true"><img src={facebook} /></a></li>
               <li><a href="#" aria-hidden="true"><img src={twitter} /></a></li>
-              <li><a href="#" aria-hidden="true"></a><img src={instagram} /></li>
-              <li><a href="#" aria-hidden="true"></a><img src={pinterest} /></li>
+              <li><a href="#" aria-hidden="true"><img src={instagram} /></a></li>
+              <li><a href="#" aria-hidden="true"><img src={pinterest} /></a></li>
             </ul>
           </div>
         </div>

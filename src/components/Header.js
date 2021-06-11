@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../assets/images/doctor.png";
+import "../assets/styles/header.css";
 
 function Header() {
   return (

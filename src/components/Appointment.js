@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Appointment() {
   return (
@@ -8,7 +9,7 @@ function Appointment() {
         <h5>We make it simple to get healthcare whenever and wherever you want</h5>
       </div>
       <div className="right-appoint">
-        <a className="main-white-button" href="#">Create Appointment Now!</a>
+        <Link className="main-white-button" to="/appointment">Create Appointment Now!</Link>
       </div>
     </section>
   );

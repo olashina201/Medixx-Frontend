@@ -3,28 +3,138 @@ import "../assets/styles/blog.css";
 
 function Blog() {
   return (
-    <div className="container">
-      <h1>From Our Recent Posts</h1>
-      <div className="wrapper">
-        <div className="card">
-          <img src="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
-          <h3 className="card-title">CARD TITLE</h3>
-          <p className="card-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classNameical Latin literature from 45 BC, making it over 2000 years old.</p>
-          <button className="card-btn">READ MORE</button>
-        </div>
-        <div className="card">
-        <img src="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
-          <h3 className="card-title">CARD TITLE</h3>
-          <p className="card-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classNameical Latin literature from 45 BC, making it over 2000 years old.</p>
-          <button className="card-btn">READ MORE</button>
-        </div>
-        <div className="card">
-        <img src="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
-          <h3 className="card-title">CARD TITLE</h3>
-          <p className="card-content">Contrary to popular belief,
-          Lorem Ipsum is not simply random text. It has roots in a piece of
-          classNameical Latin literature from 45 BC, making it over 2000 years old.</p>
-          <button className="card-btn">READ MORE</button>
+    <div class="hc-blog hc-spacer-top" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="hc-heading-wrap text-center">
+              <h2 class="hc-sub-heading">Blog Posts</h2>
+              <h1 class="hc-heading">Latest Update</h1>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="hc-blog-box">
+              <div class="hc-blog-img">
+                <a href="javascript:;">
+                  <img src={image} alt="blog" />
+                </a>
+              </div>
+              <div class="hc-blog-data">
+                <div class="hc-blog-head">
+                  <a href="javascript:;" class="hc-blog-date">
+                    23, April 2021
+                  </a>
+                  <ul class="hc-blog-social">
+                    <li>
+                      <a href="javacript:;">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javacript:;">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javacript:;">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="javascript:;">
+                  <h1 class="hc-blog-title">
+                    Aenean facilisis sodales est neciMorbi
+                  </h1>
+                </a>
+                <a href="javascript:;" class="hc-blog-more">
+                  Read More <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="hc-blog-box">
+              <div class="hc-blog-img">
+                <a href="javascript:;">
+                  <img src={image} alt="blog" />
+                </a>
+              </div>
+              <div class="hc-blog-data">
+                <div class="hc-blog-head">
+                  <a href="javascript:;" class="hc-blog-date">
+                    23, April 2021
+                  </a>
+                  <ul class="hc-blog-social">
+                    <li>
+                      <a href="javacript:;">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javacript:;">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javacript:;">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="javascript:;">
+                  <h1 class="hc-blog-title">
+                    Aenean facilisis sodales est neciMorbi
+                  </h1>
+                </a>
+                <a href="javascript:;" class="hc-blog-more">
+                  Read More <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="hc-blog-box">
+              <div class="hc-blog-img">
+                <a href="javascript:;">
+                  <img src={image} alt="blog" />
+                </a>
+              </div>
+              <div class="hc-blog-data">
+                <div class="hc-blog-head">
+                  <a href="javascript:;" class="hc-blog-date">
+                    23, April 2021
+                  </a>
+                  <ul class="hc-blog-social">
+                    <li>
+                      <a href="javacript:;">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javacript:;">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javacript:;">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="javascript:;">
+                  <h1 class="hc-blog-title">
+                    Aenean facilisis sodales est neciMorbi
+                  </h1>
+                </a>
+                <a href="javascript:;" class="hc-blog-more">
+                  Read More <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

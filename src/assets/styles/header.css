@@ -624,13 +624,17 @@ header
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
-    display: none;
+    display: "block";
     -webkit-transition: all 0s ease 0s;
     -moz-transition: all 0s ease 0s;
     -o-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
     margin-left: 0px;
   }
+  .header-area .main-nav .dis{
+    display: none;
+  }
+
   .background-header .nav {
     margin-top: 80px;
   }
@@ -696,4 +700,7 @@ header
   .header-area .main-nav .nav {
     display: flex !important;
   }
+}
+.dis{
+  display: block;
 }

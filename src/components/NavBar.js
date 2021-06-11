@@ -1,25 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/styles/header.css";
 import "../assets/bootstrap/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 import NavData from "./NavItems";
 
 function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
     <header className="header-area header-sticky">
       <div className="container">
         <div className="row">
           <div className="col-12">
             <nav className="main-nav">
-              <a href="index.html" className="logo">
+              <a href="/" className="logo">
                 <h4>MEDIXX</h4>
               </a>
-              <ul className="nav">
-                {NavData.map((item) => <li><a href={item.path} className={item.className} >
-                  { item.title }</a></li>)
+              <ul className={ isOpen ? "nav" : "nav dis"}>
+                {NavData.map((item) => <li><Link to={item.path} className={item.className} >
+                  { item.title }</Link></li>)
               }
-                <li><div className="main-blue-button"><a href="#contact">Get Started</a></div></li>
+                <li><div className="main-blue-button"><Link to="/register">Get Started</Link></div></li>
               </ul>
-              <a className='menu-trigger'>
+              <a className={ isOpen ? "menu-trigger active" : "menu-trigger" } onClick={toggle}>
                   <span>Menu</span>
               </a>
             </nav>

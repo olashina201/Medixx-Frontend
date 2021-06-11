@@ -13,12 +13,12 @@ const NavData = [
     path: "/contact"
   },
   {
-    title: "Contact Us",
-    path: "/contact"
+    title: "Health Tips",
+    path: "/health"
   },
   {
-    title: "Contact Us",
-    path: "/contact"
+    title: "E-diagnosis",
+    path: "/diagnosis"
   }
 ];
 
