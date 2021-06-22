@@ -18,10 +18,11 @@ function NavBar() {
                 <h4>MEDIXX</h4>
               </a>
               <ul className={ isOpen ? "nav" : "nav dis"}>
-                {NavData.map((item) => <li><Link to={item.path} className={item.className} >
+                {NavData.map((item) => <li><Link to={item.path} key={item.title}
+                className={item.className} >
                   { item.title }</Link></li>)
               }
-                <li><div className="main-blue-button"><Link to="/register">Get Started</Link></div></li>
+                <li><div className="main-blue-button"><Link to="/auth">Get Started</Link></div></li>
               </ul>
               <a className={ isOpen ? "menu-trigger active" : "menu-trigger" } onClick={toggle}>
                   <span>Menu</span>
