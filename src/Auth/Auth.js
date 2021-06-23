@@ -17,13 +17,13 @@ const initialState = {
   firstName: "",
   lastName: "",
   email: "",
-  password: "",
-  confirmPassword: ""
+  password: ""
 };
 
 const SignUp = () => {
   const [form, setForm] = useState(initialState);
   const [isSignup, setIsSignup] = useState(false);
+  
   const dispatch = useDispatch();
   const history = useHistory();
   const classes = useStyles();
@@ -41,10 +41,8 @@ const SignUp = () => {
     e.preventDefault();
 
     if (isSignup) {
-      console.log(form);
       dispatch(signup(form, history));
     } else {
-      console.log(form);
       dispatch(signin(form, history));
     }
   };
@@ -89,14 +87,6 @@ const SignUp = () => {
               type={showPassword ? "text" : "password"}
               handleShowPassword={handleShowPassword}
             />
-            {isSignup && (
-              <Input
-                name="confirmPassword"
-                label="Repeat Password"
-                handleChange={handleChange}
-                type="password"
-              />
-            )}
           </Grid>
           <Button
             type="submit"

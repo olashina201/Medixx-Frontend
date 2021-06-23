@@ -1,10 +1,15 @@
 import * as actionType from "../constants/actionTypes";
 
-const authReducer = (state = { authData: null }, action) => {
+const initialState = {
+  authData: "quadri",
+  loading: false,
+  errors: null
+};
+
+const authReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionType.AUTH:
       localStorage.setItem("profile", JSON.stringify({ ...action?.data }));
-
       return {
         ...state,
         authData: action.data,
