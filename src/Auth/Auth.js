@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
-import { signin, signup } from "../redux/actions/auth";
+import { signin, register } from "../redux/actions/auth";
 import useStyles from "./styles";
 import Input from "./Input";
 
@@ -21,9 +21,8 @@ const initialState = {
 };
 
 const SignUp = () => {
-  const [form, setForm] = useState(initialState);
+  const [formData, setFormData] = useState(initialState);
   const [isSignup, setIsSignup] = useState(false);
-  
   const dispatch = useDispatch();
   const history = useHistory();
   const classes = useStyles();
@@ -32,7 +31,7 @@ const SignUp = () => {
   const handleShowPassword = () => setShowPassword(!showPassword);
 
   const switchMode = () => {
-    setForm(initialState);
+    setFormData(initialState);
     setIsSignup((prevIsSignup) => !prevIsSignup);
     setShowPassword(false);
   };
@@ -41,13 +40,14 @@ const SignUp = () => {
     e.preventDefault();
 
     if (isSignup) {
-      dispatch(signup(form, history));
+      dispatch(register(formData, history));
+      console.log(formData);
     } else {
-      dispatch(signin(form, history));
+      dispatch(signin(formData, history));
     }
   };
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   return (
     <Container component="main" maxWidth="xs">
@@ -62,6 +62,7 @@ const SignUp = () => {
                 <Input
                   name="firstName"
                   label="First Name"
+                  value={ formData.firstName }
                   handleChange={handleChange}
                   autoFocus
                   half
@@ -69,6 +70,7 @@ const SignUp = () => {
                 <Input
                   name="lastName"
                   label="Last Name"
+                  value={ formData.lastName }
                   handleChange={handleChange}
                   half
                 />
@@ -77,6 +79,7 @@ const SignUp = () => {
             <Input
               name="email"
               label="Email Address"
+              value={ formData.email }
               handleChange={handleChange}
               type="email"
             />
@@ -84,6 +87,7 @@ const SignUp = () => {
               name="password"
               label="Password"
               handleChange={handleChange}
+              value={ formData.password }
               type={showPassword ? "text" : "password"}
               handleShowPassword={handleShowPassword}
             />

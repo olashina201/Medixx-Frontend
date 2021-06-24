@@ -1,18 +1,15 @@
 import { useEffect } from "react";
-import { useSelector } from "react-redux";
 import Video from "./components/Video/Video";
 import VideoState from "./context/VideoState";
 import Options from "./components/options/Options";
 import "./App.css";
 
 const Home = () => {
-  const getUser = useSelector((state) => state);
   useEffect(() => {
     if (!navigator.onLine) alert("Connect to internet!");
   }, [navigator]);
   return (
     <VideoState>
-      { getUser }
       <div className="App" style={{ height: "100%", width: "100%" }}>
         <Video />
         <Options />

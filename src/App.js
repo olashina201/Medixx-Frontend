@@ -1,14 +1,18 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 import Index from "./pages/Index";
 import AppointmentForm from "./authentication/AppointmentForm";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import HealthTips from "./pages/HealthTips";
 import Diagnosis from "./pages/Diagnosis";
-import VideoCall from "./dashboard/VideoCall";
-import VideoChat from "./dashboard/VideoChat";
 import Home from "./video/Home";
 import Auth from "./Auth/Auth";
+import PatientProfile from "./dashboard/PatientProfile";
 
 function App() {
   const user = JSON.parse(localStorage.getItem("profile"));
@@ -23,10 +27,9 @@ function App() {
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/health' component={HealthTips} />
             <Route exact path='/diagnosis' component={Diagnosis} />
-            <Route exact path='/video' component={VideoCall} />
-            <Route exact path='/video-chat' component={VideoChat} />
-            <Route exact path='/home' component={Home} />
-            <Route path="/auth" exact component={() => (!user ? <Auth /> : <Redirect to="/posts" />)} />
+            <Route exact path='/video' component={Home} />
+            <Route exact path='/profile' component={PatientProfile} />
+            <Route path="/auth" exact component={() => (!user ? <Auth /> : <Redirect to="/profile" />)} />
           </Route>
         </Switch>
       </Router>

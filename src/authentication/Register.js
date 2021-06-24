@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import axios from "axios";
-import { withRouter, useHistory } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { registerUser } from "../redux/actions/authActions";
+import { signup } from "../redux/actions/auth";
 import "./styles/style.css";
 import logo from "../assets/images/medicX.png";
 import bg from "../assets/images/bg.svg";
@@ -24,14 +23,7 @@ function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(userData);
-    axios.post("http://localhost:8080/api/signup", userData)
-      .then((response) => {
-        response.redirect("/login");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-    registerUser(userData, userData.history);
+    signup(userData, userData.history);
   };
   return (
     <div>
@@ -147,5 +139,5 @@ const mapStateToProps = (state) => ({
 
 export default connect(
   mapStateToProps,
-  { registerUser }
+  { signup }
 )(withRouter(Register));

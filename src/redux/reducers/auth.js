@@ -1,22 +1,20 @@
-import * as actionType from "../constants/actionTypes";
+import { AUTH, LOGOUT, APPOINT } from "../constants/actionTypes";
 
 const initialState = {
-  authData: "quadri",
-  loading: false,
-  errors: null
+  authData: [],
+  appointData: []
 };
-
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
-    case actionType.AUTH:
-      localStorage.setItem("profile", JSON.stringify({ ...action?.data }));
+    case AUTH:
+      localStorage.setItem("profile", JSON.stringify({ ...action }));
       return {
         ...state,
-        authData: action.data,
+        authData: action,
         loading: false,
         errors: null
       };
-    case actionType.LOGOUT:
+    case LOGOUT:
       localStorage.clear();
 
       return {
@@ -24,6 +22,11 @@ const authReducer = (state = initialState, action) => {
         authData: null,
         loading: false,
         errors: null
+      };
+    case APPOINT:
+      return {
+        ...state,
+        appointData: action
       };
     default:
       return state;
