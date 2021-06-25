@@ -14,7 +14,7 @@ const NavData = [
   },
   {
     title: "Health Tips",
-    path: "/health"
+    path: "/video"
   },
   {
     title: "E-diagnosis",

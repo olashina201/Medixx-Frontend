@@ -28,6 +28,9 @@
   margin-bottom: 10px;
   margin-left: 5px;
 }
+.solution-card h6{
+  line-height: 25px;
+}
 .solution-card img{
   width: 50px;
 }

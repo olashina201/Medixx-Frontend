@@ -38,7 +38,7 @@ function PatientProfile() {
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item px-4">
                     <span className="descriptionText">
-                      Body Mass Index : {2 + 2}
+                      Body Mass Index : {profile?.payload?.weight}
                     </span>
                   </li>
                 </ul>

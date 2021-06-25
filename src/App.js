@@ -11,8 +11,9 @@ import Contact from "./pages/Contact";
 import HealthTips from "./pages/HealthTips";
 import Diagnosis from "./pages/Diagnosis";
 import Home from "./video/Home";
-import Auth from "./Auth/Auth";
 import PatientProfile from "./dashboard/PatientProfile";
+import OnBoard from "./Auth/OnBoard";
+import AddPrescriptions from "./dashboard/prescriptions/AddPrescriptions";
 
 function App() {
   const user = JSON.parse(localStorage.getItem("profile"));
@@ -29,7 +30,9 @@ function App() {
             <Route exact path='/diagnosis' component={Diagnosis} />
             <Route exact path='/video' component={Home} />
             <Route exact path='/profile' component={PatientProfile} />
-            <Route path="/auth" exact component={() => (!user ? <Auth /> : <Redirect to="/profile" />)} />
+            <Route exact path='/onboard' component={OnBoard} />
+            <Route exact path='/addprescription' component={AddPrescriptions} />
+            <Route path="/auth" exact component={() => (!user ? <OnBoard /> : <Redirect to="/profile" />)} />
           </Route>
         </Switch>
       </Router>

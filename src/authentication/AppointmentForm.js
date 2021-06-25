@@ -16,7 +16,6 @@ function AppointmentForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(appoint(input));
-    console.log(input);
   };
   const handleChange = ({ target: { name, value } }) => {
     setInput({ ...input, [name]: value });
