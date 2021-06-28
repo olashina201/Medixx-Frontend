@@ -2,7 +2,6 @@ import React from "react";
 import BreadCrumb from "./BreadCrumb";
 import profileCard from "./profileCard";
 import Submit from "./Submit";
-import "./css/bootstrap.min.css";
 
 function AddPrescriptions() {
   return (

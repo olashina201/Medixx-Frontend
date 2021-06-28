@@ -1,8 +1,7 @@
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect
+  Route
 } from "react-router-dom";
 import Index from "./pages/Index";
 import AppointmentForm from "./authentication/AppointmentForm";
@@ -10,7 +9,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import HealthTips from "./pages/HealthTips";
 import Diagnosis from "./pages/Diagnosis";
-import Home from "./video/Home";
 import PatientProfile from "./dashboard/PatientProfile";
 import OnBoard from "./Auth/OnBoard";
 import AddPrescriptions from "./dashboard/prescriptions/AddPrescriptions";
@@ -28,7 +26,6 @@ function App() {
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/health' component={HealthTips} />
             <Route exact path='/diagnosis' component={Diagnosis} />
-            <Route exact path='/video' component={Home} />
             <Route exact path='/profile' component={PatientProfile} />
             <Route exact path='/onboard' component={OnBoard} />
             <Route exact path='/addprescription' component={AddPrescriptions} />
